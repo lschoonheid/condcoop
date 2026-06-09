@@ -95,7 +95,7 @@ class Group():
         others_contributions = []
         for other_player in self.players:
             if other_player != player:
-                others_contributions.append(player.last_contribution)
+                others_contributions.append(other_player.last_contribution)
         assert(len(others_contributions) == 3)
         return others_contributions
 
